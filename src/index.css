@@ -1,0 +1,718 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+nav{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.Content{
+  width: 100%;
+  margin-top: 90px;
+  overflow: hidden;
+}
+nav .left{
+  display: flex;
+  align-items: center;
+}
+nav .left .image{
+  width: 100px;
+  height: 50px;
+}
+.left .image img{
+  width: 100%;
+  height: 100%;
+  scale: 1.6;
+  object-fit: contain;
+}
+.left h1{
+  font-weight:700;
+  margin-left: -15px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 500;
+}
+.right{
+  display: flex;
+}
+.language_box{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+select {
+  border: none;
+  outline: none;
+}
+select,
+option ,#select {
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color:white; /* Replace with your desired background color */
+}
+
+.auth_btns{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 15px;
+  margin-left: -5rem;
+}
+.auth_btns button{
+  padding: 12px 18px;
+  border: 1px black;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.auth_btns .user{
+background-color: transparent;
+display: flex;
+align-items: center;
+font-weight:650;
+margin-right: -5px;
+}
+.user span{
+  font-size: 0.8rem;
+}
+.user img{
+  width:40px;
+  height:40px;
+  margin-right: 8px;
+  object-fit: cover;
+ border-radius: 50%;
+ background-color: #a4a2a2;
+}
+
+.Homepage{
+  width: 100%;
+  height: calc(100vh-90px);
+  position: relative;
+}
+
+.Hero_Section{
+  width: 100%;
+  height: 85.8vh;
+  display: flex;
+  overflow: hidden;
+}
+.hero_left{
+  flex-basis: 50%;
+}
+.hero_left .hero_Details{
+margin-left: 4rem;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+}
+.hero_Details .hero_heading{
+  margin-top:4.5rem;
+}
+.hero_heading h1{
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #7d7d7d;
+}
+.hero_heading h1 span{
+  color: #0F0F0E;
+}
+.hero_para p {
+  margin-right: 5rem;
+  color: #a4a2a2;
+  font-weight: 500;
+  line-height: 22px;
+}
+.hero_Details button{
+  padding: 15px 5rem;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #0F0F0F;
+  border-radius: 5px;
+font-size: 1rem;
+font-weight: 600;
+letter-spacing: 1px;
+margin-top: 15px;
+}
+.hero_Right{
+  flex-basis: 50%;
+  width: 50%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_Right img{
+  width: 900px;
+  margin-right: 55px;
+}
+
+::selection{
+  background-color: grey;
+  color: white;
+}
+
+.BrandBanner{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #c3bebe22;
+  justify-content: space-around;
+}
+.BrandBanner img{
+  aspect-ratio: 5/9;
+  width: 90px;
+  object-fit: contain;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.whychoose{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.why_details{
+  flex-basis: 50%;
+}
+.why_details span{
+  width: 100px;
+  margin-left: 45px;
+  border-radius: 15px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  margin-top: 5rem;
+  z-index: 0;
+}
+.faq{
+  margin-top: 5rem;
+  width: 100%;
+  margin-left: 2rem;
+  height: 50vh;
+}
+.faq h1{
+  margin: 15px;
+  padding-top: 15px;
+}
+.faq p{
+  font-size: 15px;
+  margin-right: 7rem;
+  margin-left: 15px;
+  color: #a4a2a2;
+}
+.faq_card{
+  width: 80%;
+  border-radius: 5px;
+  margin-left: 45px;
+  background-color: #a4a2a216;
+  margin-top: 10px;
+}
+.faq_card h3{
+  color: black;
+  font-size: 1rem;
+}
+.faq .Fc2 {
+  margin-left: 6rem;
+}
+.faq .Fc3{
+margin-left: 10rem;
+}
+.faq_card .details p {
+  padding:10px 15px;
+
+}
+.faq_card .head{
+  display: flex;
+  align-items: center;
+  margin: 0 0 0px 10px;
+  padding-top: 10px;
+  gap: 10px;
+  color: springgreen;
+}
+.why_images{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+}
+
+.why_images img{
+  width: 80%;
+  object-fit: cover;
+}
+.vehiclespage hr{
+  width: 100px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  outline: none;
+  margin: 15px;
+}
+.vehiclespage{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.vehiclespage .head{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.vehiclespage .head h1{
+  text-align: center;
+  color: #242323;
+}
+.vehiclespage .head h1 span{
+  font-weight: 800;
+  color: #0F0F0E;
+}
+.vehiclespage .head p{
+  color: #7d7d7d;
+  width: 90%;
+  text-align: center;
+}
+.filter_Section{
+  width: 80%;
+  height: 75vh;
+  border-radius: 15px;
+}
+.filter_btn{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.filter_btn button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 800;
+  font-size: 12px;
+  border: none;
+}
+.filter_cars {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.filter_cars .car_card {
+  width: 210px;
+  margin: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 180px;
+  border-radius: 25px;
+  overflow: hidden; 
+}
+
+.filter_cars .car_card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover; 
+}
+
+#bottom-wave{
+  position: absolute;
+  rotate: 90deg;
+  right: 0;
+  top: 25rem;
+  right: -28rem;
+  width: 100%;
+  z-index: -99;
+}
+
+#mid-wave{
+  position: absolute;
+  rotate: -90deg;
+  top: 100rem;
+  left: -33rem;
+  z-index: -99;
+}
+.support{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 15px;
+}
+.support h1{
+  margin-top: 4rem;
+  font-size: 2.4rem;
+}
+
+.query_checkbox{
+  width: 80%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.query_card{
+  width: 180px;
+  background-color: #cfcbcbdd;
+  height: 140px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.query_card span{
+position: absolute;
+bottom: 15px;
+}
+.query_card strong {
+  font-size: 2rem;
+}
+.query_card span{
+  font-weight: 700;
+}
+
+.queBox{
+  width: 38%;
+  height: 60px;
+  background-color: #cfcbcbbd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.queBox input{
+  width: 75%;
+  height: 35px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  font-weight: 800;
+}
+.searchicons{
+  color: grey;
+  margin-left: 10px;
+}
+.queBox button{
+  padding: 11px ;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.SearchPage{
+  width: 100%;
+  display: flex;
+  height: 85vh;
+}
+.select_date{
+  width: 100%;
+  height: 45vh;
+}
+.select_date .box{
+  width: 98%;
+  height: 98%;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #242323;
+  color: white;
+
+}
+.box .box_images{
+  flex-basis: 30%;
+  height: 45vh;
+} 
+.box_details{
+  flex-basis: 70%;
+  border-radius: 15px;
+}
+.box_details h2{
+  margin: 15px;
+  font-weight: 600;
+}
+.box_images img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.pick_loaction{
+  width: 60%;
+  background-color: #fff;
+  color: black;
+  height: 50px;
+  border-radius: 10px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -5px;
+}
+.pick_loaction input{
+  width: 88%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 800;
+}
+.select_date section{
+ display: flex;
+ position: relative;
+ margin-top: 2rem;
+
+}
+.select_date .pick_up{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 10px;
+  width: 28%;
+  background-color: #fff;
+  color: black;
+  margin-left: 20px;
+  justify-content: space-around;
+}
+#date::after{
+  position: absolute;
+  content: "Pickup Date";
+  font-weight: 700;
+  top: -1.5rem;
+  left: 25px;
+  color:white;
+}
+#date2::after{
+  position: absolute;
+  content: "Drop Off Date";
+  font-weight: 700;
+  top: -1.5rem;
+  color:white;
+  margin-left: -35px;
+}
+.pick_up input{
+  border: none;
+  outline: none;
+  width: 45%;
+}
+.select_date button{
+  height: 50px;
+  width: 40%;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter_box{
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.filter_box h2{
+  font-size: 18px;
+  margin: 5px;
+}
+.filter_box .fbox{
+  background-color: #cfcbcb6b;
+  border-radius: 4px;
+  padding: 10px;
+}
+.fbox input[type="range"]{
+  width: 65%;
+  padding: 10px 0;
+}
+.fbox  div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.fbox .fisrt{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+}
+.fbox label{
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.main_Serach{
+  width:95%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: auto;
+  border-radius: 10px;
+}
+.cars_list{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Cars_card{
+  width: 98%;
+  height: 220px;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: #cfcbcbbd;
+  display: flex;
+}
+
+.Cars_card .first{
+  flex-basis: 25%;
+  border-top-left-radius:15px ;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.Cars_card .first img{
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: #0F0F0F;
+}
+.Cars_card .first button{
+  position: relative;
+  top: 10px;
+  padding: 12px 65px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 800;
+}
+.Cars_card .first button:hover{
+  background-color: black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.Cars_card .second{
+  flex-basis: 75%;
+  border-top-right-radius:15px ;
+  border-bottom-right-radius: 15px;
+}
+.Cars_card .second .first_row{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.second .first_row:nth-child(1){
+  margin-top: 0.8rem;
+}
+
+.second .first_row span{
+  padding: 10px 0;
+}
+.second  .icons span{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.first_row:nth-child(3){
+  margin-top: 15px;
+}
+
+.first_row:nth-child(4){
+  margin-top: 45px;
+  color: rgba(255, 0, 0, 0.757);
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Light color for the scrollbar thumb */
+  border-radius: 8px;
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa; /* Darker color on hover */
+}
+
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
